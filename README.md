@@ -1,2 +1,4 @@
 # Portfolio
-~ Systems that I have made over time
+~ A Compilation of systems I have created and wish to display.
+
+
