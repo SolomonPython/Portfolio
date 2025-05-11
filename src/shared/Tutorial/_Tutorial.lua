@@ -21,18 +21,19 @@ export type Tutorial = {
 -----------------------------------------
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
---// local SoundService = game:GetService("SoundService")
+
+-- OPTIONAL SOUND STORAGE
+--// local SoundService = game:GetService("SoundService") -- Change this to anywhere you store your sounds (SoundService, ReplicatedStorage, Etc)
 
 -- VARIABLES --
 -----------------------------------------
-local Cache = {} -- Element Cache
-local ActiveTutorial: Tutorial? = nil
+local Cache = {} :: {[string]: any} -- Element Cache
+local ActiveTutorial: Tutorial? = nil -- Current Active Tutorial Object
 
-local LocalPlayer = Players.LocalPlayer
-local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
-
-local RootGui = PlayerGui:WaitForChild("Tutorial")
-local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+local LocalPlayer = Players.LocalPlayer :: Player
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui") :: PlayerGui
+local RootGui = PlayerGui:WaitForChild("Tutorial") :: ScreenGui
+local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut) :: TweenInfo
 
 --// SOUND_REFERENCE: local TextSound = ""
 
@@ -45,8 +46,8 @@ local Settings = {
 
 -- PRIVATE FUNCTIONS --
 -----------------------------------------
-local function CacheElements(root: ScreenGui)
-	local AllowedTypes = {
+local function CacheElements(root: ScreenGui): ()
+	local AllowedTypes = { -- ADD MORE TYPES IF NEEDED
 		TextLabel = true,
 		TextButton = true,
 		Frame = true,
@@ -59,7 +60,7 @@ local function CacheElements(root: ScreenGui)
 	end
 end
 
-local function UpdateCurrentPage(self)
+local function UpdateCurrentPage(self): () -- UPDATES THE CURRENT PAGE
 	local PageLabel = Cache["PageLabel"] :: TextLabel
 	if not PageLabel then
 		return
@@ -76,16 +77,20 @@ function _Tutorial.start()
 	CacheElements(RootGui)
 end
 
-function _Tutorial.new(title: string, pages: { string }): Tutorial | nil
+function _Tutorial.new(title: string, pages: { string }): Tutorial?
 	if not title or not pages then
-		warn("Title or Pages not found")
-		return
+		error("Title or Pages not found")
 	end
 
 	if ActiveTutorial then
-		ActiveTutorial:tweenClose(function()
+
+		-- Store parameters in a closure
+		local function createAfterClose()
 			_Tutorial.new(title, pages)
-		end)
+		end
+
+		-- Close current and set up new one afterward
+		ActiveTutorial:tweenClose(createAfterClose)
 		return nil
 	end
 
@@ -105,16 +110,19 @@ function _Tutorial.new(title: string, pages: { string }): Tutorial | nil
 		warn("Button not found")
 		return nil
 	end
+
 	Title.Text = self.title
 
 	self._connections = {
-		Next.MouseButton1Click:Connect(function()
+		Next.MouseButton1Click:Connect(function(): ()
 			self:next()
 		end),
-		Prev.MouseButton1Click:Connect(function()
+
+		Prev.MouseButton1Click:Connect(function(): ()
 			self:prev()
 		end),
-		Close.MouseButton1Click:Connect(function()
+
+		Close.MouseButton1Click:Connect(function(): ()
 			self:tweenClose()
 		end),
 	}
@@ -127,7 +135,7 @@ function _Tutorial.new(title: string, pages: { string }): Tutorial | nil
 	return self
 end
 
-function _Tutorial:next()
+function _Tutorial:next(): ()
 	if not self.pages then
 		return
 	end
@@ -146,7 +154,7 @@ function _Tutorial:next()
 	self:animate(self.pages[self.currentPage])
 end
 
-function _Tutorial:prev()
+function _Tutorial:prev(): ()
 	if not self.pages then
 		return
 	end
@@ -166,7 +174,7 @@ function _Tutorial:prev()
 	self:animate(self.pages[self.currentPage])
 end
 
-function _Tutorial:animate(text: string)
+function _Tutorial:animate(text: string): ()
 	if self._animating then
 		return
 	end
@@ -200,7 +208,7 @@ function _Tutorial:animate(text: string)
 	self._animating = false
 end
 
-function _Tutorial:tweenOpen()
+function _Tutorial:tweenOpen(): ()
 	if not self.pages then
 		return
 	end
@@ -235,6 +243,8 @@ function _Tutorial:tweenClose(onComplete: (() -> ())?)
 		return
 	end
 
+	--//STOP SOUND HERE: 
+
 	--TextSound:Stop()
 	--TextSound.TimePosition = 0 -- Ensures it's fully reset
 
@@ -244,7 +254,7 @@ function _Tutorial:tweenClose(onComplete: (() -> ())?)
 
 	tween:Play()
 
-	tween.Completed:Connect(function()
+	tween.Completed:Connect(function(): ()
 		Container.Visible = false
 		self:destroy()
 
@@ -254,7 +264,7 @@ function _Tutorial:tweenClose(onComplete: (() -> ())?)
 	end)
 end
 
-function _Tutorial:destroy()
+function _Tutorial:destroy(): ()
 	if ActiveTutorial == self then
 		ActiveTutorial = nil
 	end
@@ -268,13 +278,11 @@ function _Tutorial:destroy()
 		self._connections = nil
 	end
 
-	-- Optional: hide or remove UI elements
 	local Container = Cache["Container"] :: Frame
 	if Container then
 		Container.Visible = false
 	end
 
-	-- Clear other references if needed
 	self.pages = {}
 end
 
