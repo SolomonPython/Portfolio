@@ -1,6 +1,3 @@
-script.Enabled = false
-
---[[
 # FEATURES
 
 - Multi-page tutorial system with typing animation
@@ -23,7 +20,7 @@ script.Enabled = false
 
 3. In a LocalScript, require the module and initialize it:
 
-
+```lua
 local Tutorial = require(path.to.TutorialModule)
 
 -- Always call this first to cache UI references
@@ -37,4 +34,3 @@ local myTutorial = Tutorial.new("Welcome!", {
     "Avoid the manager!",
     "Good luck!"
 })
-]]
