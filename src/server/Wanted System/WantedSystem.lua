@@ -1,10 +1,4 @@
--- SERVICES --
---------------------------------
-local _ = game:GetService("Players")
-local _ = game:GetService("RunService")
-local _ = game:GetService("Teams")
-
--- VARIABLES --
+-- STATE--
 --------------------------------
 local MAX_SYMBOLS = 5 -- (Allow for ICONS to display your wanted level on the client)
 local TIME_PER_SYMBOL = {5, 10, 15, 20, 25} --> How much time each symbol is worth when added (customizable)
