@@ -13,6 +13,14 @@ All assets and systems in this repository are **public** and can be used by othe
 - **Commercial Use:** You may use the assets in your projects, both personal and commercial, as long as credits are given in a manner that is visible within your project or game.
 - **Modifications:** You are allowed to modify the code to suit your needs, but again, the modified code must still include proper attribution.
 
+## Contributions
+
+Groups or Experiences that I have contributed to:
+- **Maccies**: https://www.roblox.com/communities/33883414/Maccies-FastFood-LTD#!/about 
+- **Squid Game Order**: https://www.roblox.com/communities/35538608/Squid-game-Order-SGO#!/about
+- **Girls Girls Studio**: https://www.roblox.com/communities/34279327/Girls-Girls-Studios#!/about
+- **Cascades Studios**: https://www.roblox.com/communities/8345513/Cascades-Studios#!/about
+
 ## Featured Systems
 
 Some of the systems and projects featured in this repository or to be created include:
