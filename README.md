@@ -24,6 +24,9 @@ Groups or Experiences that I have contributed to:
 ## Featured Systems
 
 Some of the systems and projects featured in this repository or to be created include:
+- **Inventory System**: A system for managing inventory states on the server and client.
+- **Wanted System**: A system that can make a player wanted and track that players wanted state.
+- **Tutorial System**: A system that allows you to easily create tutorials or explanations for your game.
 - **NPC Awareness System**: A system for managing NPC behavior and detecting player actions within a game environment.
 - **Object Interaction System**: A system for managing interactions with various objects in a game, like coffee machines, printers, and more.
 - **User Interface Systems**: Custom-built user interfaces for game interactions, task management, and more.
