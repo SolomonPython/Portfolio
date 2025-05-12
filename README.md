@@ -32,10 +32,6 @@ Some of the systems and projects featured in this repository or to be created in
 - **User Interface Systems**: Custom-built user interfaces for game interactions, task management, and more.
 - **Task Management**: Various task modules to manage and track player actions and goals in multiplayer games.
 
-## Contributing
-
-I welcome contributions and suggestions! If you have any improvements, bug fixes, or new features that you think could benefit this repository, feel free to open an issue or submit a pull request.
-
 ## Contact
 
 If you wish to contact me for questions, collaborations, or other inquiries, you can reach me via:
