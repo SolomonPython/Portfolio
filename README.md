@@ -34,8 +34,6 @@ Some of the systems and projects featured in this repository or to be created in
 - **User Interface Systems**: Custom-built user interfaces for game interactions, task management, and more.
 - **Task Management**: Various task modules to manage and track player actions and goals in multiplayer games.
 
-![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Fishing-demo.gif)
-
 ## Contact
 
 If you wish to contact me for questions, collaborations, or other inquiries, you can reach me via:
@@ -43,5 +41,15 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 - **ROBLOX**: [SolomonPython](https://www.roblox.com/users/1134085494/profile)
 - **DISCORD**: https://discordapp.com/users/591063466765451264
 - **Email**: baggycastle@gmail.com
+
+## DEMOS
+
+- **Fishing Minigame Demo**:
+![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Fishing-demo.gif)
+
+- **Tutorial Demo**:
+[demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/tutorial-demo.gif)
+
+
 
 Thank you for checking out my portfolio, and feel free to explore the code!
