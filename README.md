@@ -29,8 +29,6 @@ Some of the systems and projects featured in this repository or to be created in
 - **Wanted System**: A system that can make a player wanted and track that players wanted state.
 
 - **Tutorial System**: A system that allows you to easily create tutorials or explanations for your game.
-![Tutorial System](assets/tutorial-demo.gif)
-
 - **NPC Awareness System**: A system for managing NPC behavior and detecting player actions within a game environment.
 - **Object Interaction System**: A system for managing interactions with various objects in a game, like coffee machines, printers, and more.
 - **User Interface Systems**: Custom-built user interfaces for game interactions, task management, and more.
