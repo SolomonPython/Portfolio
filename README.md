@@ -48,7 +48,7 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Fishing-demo.gif)
 
 - **Tutorial Demo**:
-[demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/tutorial-demo.gif)
+![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/tutorial-demo.gif)
 
 
 
