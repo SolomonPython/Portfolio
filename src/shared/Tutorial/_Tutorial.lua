@@ -284,6 +284,10 @@ function _Tutorial:destroy(): ()
 	end
 
 	self.pages = {}
+
+	
+	table.clear(self)
+	setmetatable(self, nil)
 end
 
 return _Tutorial

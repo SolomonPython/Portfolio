@@ -18,8 +18,6 @@ All assets and systems in this repository are **public** and can be used by othe
 Groups or Experiences that I have contributed to:
 - **Maccies**: https://www.roblox.com/communities/33883414/Maccies-FastFood-LTD#!/about 
 - **Squid Game Order**: https://www.roblox.com/communities/35538608/Squid-game-Order-SGO#!/about
-- **Girls Girls Studio**: https://www.roblox.com/communities/34279327/Girls-Girls-Studios#!/about
-- **Cascades Studios**: https://www.roblox.com/communities/8345513/Cascades-Studios#!/about
 
 ## Featured Systems
 
