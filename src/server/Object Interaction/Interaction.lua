@@ -8,9 +8,26 @@ type InteractionData = {
     Instance: ProximityPrompt | ClickDetector
 }
 
+export type IObject = {
+    name: string;
+    onInteracted: ()->();
+    OnInteractedbject: Model | BasePart;
 
-local Interaction = {}
-Interaction.__index = Interaction
+    interactMethod: string?;
+    interactFunc: string?;
+    connection: RBXScriptConnection?;
+
+    --// Object Methods
+    new: (
+        name: string,
+        onInteracted: ()->(),
+        object: Model | BasePart
+    ) -> IObject?;
+    interact: (self: IObject) -> ();
+    destroy:(self: IObject) -> ()
+}
+
+local Interaction: IObject = {} :: IObject
 
 local function resolveType(object: any): InteractionData?
     local interactInstance = object:FindFirstChildWhichIsA("ProximityPrompt", true)
@@ -43,7 +60,7 @@ function Interaction.new(
         name = name,
         onInteracted = onInteracted,
         object = object,
-    }, Interaction) :: any
+    }, {__index = Interaction}) :: any
 
     local data = resolveType(object)
     if data then
@@ -70,14 +87,8 @@ end
 function Interaction:destroy()
     if self.connection then
         self.connection:Disconnect()
+        self.connection = nil
     end
-    
-    self.connection = nil
-    self.onInteracted = nil
-    self.name = nil
-    self.interactMethod = nil
-    self.object = nil
-    self.interactFunc = nil
 end
 
 return Interaction
