@@ -58,5 +58,9 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/animation-demo.gif)
 
 
+## SMALL PROJECTS
+
+- **Incremental Leaf Blowing Game**:
+![image](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Leaf-Game.png)
 
 Thank you for checking out my portfolio, and feel free to explore the code!
