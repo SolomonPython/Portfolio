@@ -42,9 +42,6 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 
 ## DEMOS
 
-- **Fishing Minigame Demo**:
-![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Fishing-demo.gif)
-
 - **Tutorial Demo**:
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/tutorial-demo.gif)
 
@@ -54,13 +51,10 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 - **Simple Combat Demo**:
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Combat-demo.gif)
 
-- **Simple Inteface Animation Demo**:
-![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/animation-demo.gif)
-
 
 ## SMALL PROJECTS
 
-- **Incremental Leaf Blowing Game**:
+## Incremental Leaf Blowing Game:
 
 - **SYSTEMS INCLUDE** :
 - **Inventory System**
