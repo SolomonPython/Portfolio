@@ -19,13 +19,44 @@ Groups or Experiences that I have contributed to:
 - **Maccies**: https://www.roblox.com/communities/33883414/Maccies-FastFood-LTD#!/about 
 - **Squid Game Order**: https://www.roblox.com/communities/35538608/Squid-game-Order-SGO#!/about
 
+## Skills
+
+### Programming & Scripting
+- **Lua** (Roblox Luau) – Advanced
+- **Java** – Intermediate
+- **Python** – Intermediate
+
+### Game Development
+- Roblox Studio (3+ years experience)
+- Modular Scripting & Object-Oriented Programming
+- Client-Server Architecture
+- Replication & Remote Communication
+- UI/UX Design in Roblox
+
+### Systems & Tools
+- Task Systems
+- Inventory & Economy Systems
+- NPC AI & Pathfinding
+- Interaction Systems
+- Camera & Spectator Systems
+- Data Persistence (DataStore, ProfileService)
+- Gamepass & Developer Product Implementation
+- Mobile & Console integrations
+- Round Based Systems
+- Roleplay Systems
+- Combat Systems
+
+### Other
+- Git / GitHub for version control
+- Game design prototyping
+- Debugging & optimization
+
 ## Featured Systems
 
 Some of the systems and projects featured in this repository or to be created include:
 - **User Interface Minigames**: Systems similar to stardew valley fishing, or undertale combat.
 - **Inventory System**: A system for managing inventory states on the server and client.
 - **Wanted System**: A system that can make a player wanted and track that players wanted state.
-
 - **Tutorial System**: A system that allows you to easily create tutorials or explanations for your game.
 - **NPC Awareness System**: A system for managing NPC behavior and detecting player actions within a game environment.
 - **Object Interaction System**: A system for managing interactions with various objects in a game, like coffee machines, printers, and more.
@@ -50,25 +81,5 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 
 - **Simple Combat Demo**:
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Combat-demo.gif)
-
-
-## SMALL PROJECTS
-
-## Incremental Leaf Blowing Game:
-
-- **SYSTEMS INCLUDE** :
-- **Inventory System**
-- **Incremental Upgrades**
-- **Rebirth System**
-- **Tool System**
-- **Daily Rewards System**
-- **Offline Earnings System**
-- **Settings System**
-- **RNG System**
-- **Index | Collection System**
-- **Gamepass | Dev-Product Implementation**
-- **Etc**
-
-![image](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Leaf-Game.png)
 
 Thank you for checking out my portfolio, and feel free to explore the code!
