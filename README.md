@@ -73,11 +73,11 @@ If you wish to contact me for questions, collaborations, or other inquiries, you
 
 ## DEMOS
 
-- **Tutorial Demo**:
-![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/tutorial-demo.gif)
-
 - **Whiteboard Demo**:
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/whiteboard-demo.gif)
+
+- **Tutorial Demo**:
+![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/tutorial-demo.gif)
 
 - **Simple Combat Demo**:
 ![demo](https://github.com/SolomonPython/Portfolio/blob/main/Assets/Combat-demo.gif)
